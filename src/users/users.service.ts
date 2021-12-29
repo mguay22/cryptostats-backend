@@ -4,7 +4,7 @@ import {
   NotFoundException,
   UnauthorizedException,
 } from '@nestjs/common';
-import { hash, compare } from 'bcrypt';
+import { hash, compare } from 'bcryptjs';
 import { CreateUserRequest } from './dto/request/create-user-request.dto';
 import { UserResponse } from './dto/response/user-response.dto';
 import { CoinbaseAuth } from './models/CoinbaseAuth';
